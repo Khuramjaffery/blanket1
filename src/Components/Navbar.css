@@ -1,0 +1,109 @@
+*{
+    margin: 0px ;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.nav{
+    
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: center; 
+    background-color:rgba(238, 238, 238, 0.7);
+    height: 77px;
+    position:sticky;
+    top:0px;
+    z-index: 1;
+}
+.nav  img{
+    width:100%;
+    object-fit:cover;
+}
+
+.nav-link ul{
+  display: flex;
+  list-style-type:none;
+  justify-content:flex-end;
+  align-items:center;
+  gap: 20px;
+
+}
+.nav-link ul li a {
+text-decoration: none;
+color: white;
+padding: 10px 20px ;
+font-size: 21px;
+text-transform: capitalize;
+}
+.nav-link ul li a:hover{
+
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(33,9,121,0.8519782913165266) 35%, rgba(0,212,255,1) 100%);
+}
+.signup{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(33,9,121,0.8519782913165266) 35%, rgba(0,212,255,1) 100%);
+   
+}
+.menu-mobile-icon{
+    display: none;
+}
+
+@media screen and  (max-width:976px){
+
+    .nav{
+   
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    position:sticky;
+    top:0;
+}
+.nav-link ul{
+    position: relative;
+    display: none;
+  }
+.mobile-nav-link ul{
+    
+    display: block;
+   position:absolute;
+   top: 70px;
+   left: 0px;
+   text-align: center;
+   background-color:#dee2e6;
+   width: 100%;
+
+}
+.mobile-nav-link ul li a {
+    text-decoration: none;
+ text-align: center;
+ color: white;
+padding: 10px 30px ;
+font-size: 21px;
+text-transform: capitalize;
+line-height: 50px;
+
+}
+.mobile-nav-link ul li a:hover{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(33,9,121,0.8519782913165266) 35%, rgba(0,212,255,1) 100%);
+}
+
+.menu-mobile-icon{
+    display: block;
+    position: absolute;
+  right:25px;
+  top:20px;
+  outline: none;
+  border:none;   
+  background-color:rgba(238, 238, 238, 0.7);
+  cursor: pointer;
+  font-size:25px;
+}
+}
+
+
+
+
+
